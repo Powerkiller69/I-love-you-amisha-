@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For My Amisha</title>
+  <link rel="stylesheet" type="text/css" href="default.css" />
+  <script src="jquery.js"></script>
+  <script src="garden.js"></script>
+  <script src="functions.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffe;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="mainDiv">
+    <div id="content">
+      <div id="loveHeart">
+        <canvas id="garden"></canvas>
+        <div id="messages">
+          <div>FOREVER</div>
+          <div>I LOVE YOU SO MUCH</div>
+          <div>- PRIYANSHU</div>
+        </div>
+        <div id="loveu">
+          <div class="signature"></div>
+        </div>
+      </div>
+      <div id="code" style="visibility: hidden;"></div>
+    </div>
+  </div>
+
+  <script>
+    var loveCode = `
+<span class="comments">/**</span><br />
+<span class="space"></span><span class="comments">*THE CODE OF LOVE</span><br />
+<span class="space"></span><span class="comments">*/</span><br />
+Hey My Love !<br />
+Do you know how much i stare at your pics?<br />
+<span class="comments">// too much. </span><br />
+I want to run to you one day and stay there forever;<br />
+<span class="comments">// Your face Your Voice Your Words.</span><br />
+Your everything got imprinted in my heart;<br />
+I never believed i could love again but i do and i am lucky that i fell in love with you;<br />
+So this girlfriends day i can say that i have the best woman as my girl;<br />
+I know i am far from perfect;<br />
+But i want to be a man , you can proudly say you love;<br />
+There have been fights ;<br />
+<span class="comments">// And I'm sure there will be more.</span><br />
+But our Bond will always grow back Stronger;<br />
+<br /><br />
+All I want to say is:<br />
+Baby, I will love you forever;<br />`;
+
+    $(function () {
+      $("#code").html(loveCode);
+      $("#code").css("visibility", "visible").typewriter();
+      setTimeout(startHeartAnimation, 500);
+    });
+  </script>
+</body>
+</html>
